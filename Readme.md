@@ -1,4 +1,4 @@
-# XTTSv2 Finetuning Guide for New Languages
+# XTTSv2  Guide for New Languages
 
 This guide provides instructions for finetuning XTTSv2 on a new language, using Vietnamese (`vi`) as an example.
 
