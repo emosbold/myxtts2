@@ -3,7 +3,7 @@ import gc
 
 from trainer import Trainer, TrainerArgs
 
-from TTS.config.shared_configs import BaseDatasetConfig, , CharactersConfig
+from TTS.config.shared_configs import BaseDatasetConfig, CharactersConfig
 from TTS.tts.datasets import load_tts_samples
 from TTS.tts.layers.xtts.trainer.gpt_trainer import GPTArgs, GPTTrainer, GPTTrainerConfig, XttsAudioConfig
 from TTS.utils.manage import ModelManager
