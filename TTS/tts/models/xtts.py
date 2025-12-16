@@ -160,7 +160,7 @@ class XttsArgs(Coqpit):
 
     # XTTS GPT Encoder params
     tokenizer_file: str = ""
-    gpt_max_audio_tokens: int = 402
+    gpt_max_audio_tokens: int = 605
     gpt_max_text_tokens: int = 402
     gpt_max_prompt_tokens: int = 70
     gpt_layers: int = 30
