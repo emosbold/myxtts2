@@ -144,7 +144,18 @@ def train_gpt(metadatas, num_epochs, batch_size, grad_acumm, output_path, max_au
     audio_config = XttsAudioConfig(sample_rate=22050, dvae_sample_rate=22050, output_sample_rate=24000)
     # training parameters config
 
-    config = GPTTrainerConfig()
+    CharactersConfig(
+      characters='ءابتثجحخدذرزسشصضطظعغفقلمنهويِپچژکگیآأؤإئًَُّ',
+      punctuations='!(),-.:;? ̠،؛؟‌<>',
+      phonemes='ˈˌːˑpbtdʈɖcɟkɡqɢʔɴŋɲɳnɱmʙrʀⱱɾɽɸβfvθðszʃʒʂʐçʝxɣχʁħʕhɦɬɮʋɹɻjɰlɭʎʟaegiouwyɪʊ̩æɑɔəɚɛɝɨ̃ʉʌʍ0123456789"#$%*+/=ABCDEFGHIJKLMNOPRSTUVWXYZ[]^_{}',
+      pad="<PAD>",
+      eos="<EOS>",
+      bos="<BOS>",
+      blank="<BLNK>",
+      characters_class="TTS.tts.utils.text.characters.IPAPhonemes",
+    )
+    
+    config = GPTTrainerConfig(characters=CharactersConfig)
 
     config.load_json(XTTS_CONFIG_FILE)
 
