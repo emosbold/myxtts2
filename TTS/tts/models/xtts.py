@@ -160,7 +160,7 @@ class XttsArgs(Coqpit):
 
     # XTTS GPT Encoder params
     tokenizer_file: str = ""
-    gpt_max_audio_tokens: int = 605
+    gpt_max_audio_tokens: int = 402
     gpt_max_text_tokens: int = 402
     gpt_max_prompt_tokens: int = 70
     gpt_layers: int = 30
@@ -173,7 +173,7 @@ class XttsArgs(Coqpit):
     gpt_start_audio_token: int = 8192
     gpt_stop_audio_token: int = 8193
     gpt_code_stride_len: int = 1024
-    gpt_use_masking_gt_prompt_approach: bool = True
+    gpt_use_masking_gt_prompt_approach: bool = False
     gpt_use_perceiver_resampler: bool = False
 
     # HifiGAN Decoder params
